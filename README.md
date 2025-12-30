@@ -1,17 +1,15 @@
-## Setup and Run Instructions:-
-- Node.js (version 16 or higher)
-- npm (comes with Node.js)
-- Git
+## Setup & Run--
 
-## Installation:-
-```bash
--node -v
--npm -v
--git --version
+### Install dependencies-
+npm install
+
+### Run development server-
+npm start
 
 * Clone the repository:-
 ```bash
-git clone https://github.com/nx-nikita/map-drawing-app.git
+ git clone https://github.com/nx-nikita/Shapes-Drawer.git 
+ cd MAP-DRAWING-APP
 
  ### Explanation of Polygon Overlap Logic:-
 The application ensures that no two shapes overlap on the map by validating
