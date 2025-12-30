@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/-Shapes-Drawer/static/css/main.f8f1b5f8.css",
+    "main.js": "/-Shapes-Drawer/static/js/main.ee287630.js",
+    "static/js/453.6a36b980.chunk.js": "/-Shapes-Drawer/static/js/453.6a36b980.chunk.js",
+    "static/media/spritesheet.svg": "/-Shapes-Drawer/static/media/spritesheet.a4e0eb7ad904a4858361.svg",
+    "index.html": "/-Shapes-Drawer/index.html",
+    "main.f8f1b5f8.css.map": "/-Shapes-Drawer/static/css/main.f8f1b5f8.css.map",
+    "main.ee287630.js.map": "/-Shapes-Drawer/static/js/main.ee287630.js.map",
+    "453.6a36b980.chunk.js.map": "/-Shapes-Drawer/static/js/453.6a36b980.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8f1b5f8.css",
+    "static/js/main.ee287630.js"
+  ]
+}
