@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Shape-Drawer/static/css/main.3a462d04.css",
+    "main.js": "/Shape-Drawer/static/js/main.36d4976d.js",
+    "static/js/453.6a36b980.chunk.js": "/Shape-Drawer/static/js/453.6a36b980.chunk.js",
+    "static/media/spritesheet.svg": "/Shape-Drawer/static/media/spritesheet.a4e0eb7ad904a4858361.svg",
+    "index.html": "/Shape-Drawer/index.html",
+    "main.3a462d04.css.map": "/Shape-Drawer/static/css/main.3a462d04.css.map",
+    "main.36d4976d.js.map": "/Shape-Drawer/static/js/main.36d4976d.js.map",
+    "453.6a36b980.chunk.js.map": "/Shape-Drawer/static/js/453.6a36b980.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a462d04.css",
+    "static/js/main.36d4976d.js"
+  ]
+}
