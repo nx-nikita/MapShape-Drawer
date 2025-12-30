@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from "react";
 import {
   MapContainer,
@@ -6,7 +7,7 @@ import {
   Marker,
   Tooltip,
   Polygon,
-  Rectangle,
+  Rectangle, // kept for future use
   Circle,
   Polyline,
   useMap,
@@ -22,6 +23,7 @@ import { MAX_SHAPES, ShapeType } from "../config";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import "../styles/map.css";
+
 
 const MapRefSetter = ({
   mapRef,
@@ -69,7 +71,6 @@ const DrawZoomControl = () => {
         zoomOut.innerHTML = "−";
         zoomOut.title = "Zoom Out";
 
-       
         L.DomEvent.disableClickPropagation(container);
         L.DomEvent.disableScrollPropagation(container);
 
