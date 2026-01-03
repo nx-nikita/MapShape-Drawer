@@ -8,12 +8,20 @@ npm start
 
 * Clone the repository:-
 ```bash
- git clone https://github.com/nx-nikita/Shapes-Drawer.git 
+ git clone https://github.com/nx-nikita/MapShape-Drawer.git 
  cd MAP-DRAWING-APP
 
- ### Explanation of Polygon Overlap Logic:-
-The application ensures that no two shapes overlap on the map by validating
-each newly drawn shape against all previously drawn shapes.
+## Polygon Overlap Handling
+
+We use Turf.js for spatial operations.
+
+- `turf.intersect` → detect overlaps
+- `turf.difference` → auto-trim overlapping polygons
+- `booleanContains / booleanWithin` → detect full enclosure
+
+If a polygon fully encloses another polygon, the action is blocked.
+LineStrings are excluded from overlap checks.
+
 
 ### How the logic works:-
 . All drawn shapes are stored as GeoJSON features in the application state.
@@ -79,3 +87,16 @@ Example of an exported GeoJSON object:
 . Create a branch
 . Commit changes
 . Push and make a Pull Request
+
+## Preview
+
+### Draw Shapes
+![Draw Shapes](./screenshots/draw-shapes.png)
+
+### Export GeoJSON
+![Export GeoJSON](./screenshots/export-geojson.png)
+
+### Error Handling
+![Error Message](./screenshots/error-message.png)
+
+

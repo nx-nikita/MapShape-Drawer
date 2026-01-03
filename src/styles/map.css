@@ -175,7 +175,7 @@
   line-height: 36px;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: black;
   background: rgba(86, 88, 245, 0.4);
   border-radius: 8px;
   cursor: pointer;
@@ -271,20 +271,23 @@
    box-shadow:
     inset 0 3px 4px white,
     inset 0 5px 4px rgba(0, 0, 0, 0.4);
-    border-color: #a39f9f;
+    border-color: #8a8686;
   transition: all 0.25s ease, transform 0.2s ease;
   user-select: none;
 }
 
 .leaflet-touch .leaflet-bar a:hover {
   transform: scale(1.15);
-  background-color: rgba(24, 24, 27, 0.4);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.7);
+  color:white;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0 10px 22px white;
+  border-color:rgba(86, 88, 245, 0.4);
 }
 
 .leaflet-touch .leaflet-bar a:active {
   transform: scale(0.95);
 }
+
 
 .map-wrapper[data-theme="dark"]
 .leaflet-draw-toolbar .leaflet-draw-edit-edit,
@@ -303,7 +306,6 @@
 .map-wrapper[data-theme="light"]
 .leaflet-touch .leaflet-bar a {
   background-color: rgba(255,255,255,0.85);
-  color: #000;
+  color: #000000;
 }
-
 

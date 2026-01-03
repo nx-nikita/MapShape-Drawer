@@ -6,5 +6,5 @@ export const MAX_SHAPES: Record<ShapeType, number> = {
   polygon: 10,
   rectangle: 5,
   circle: 5,
-  linestring: 20
+  linestring: 7
 };
