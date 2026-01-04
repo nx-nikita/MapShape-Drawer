@@ -29,9 +29,9 @@ const MapRefSetter = ({ mapRef }: { mapRef: React.MutableRefObject<L.Map | null>
   }, [map, mapRef]);
   return null;
 };
-// ✅ Simple user-friendly error function
+
 const showError = (msg: string) => {
-  alert(msg); // abhi simple alert, future me toast bhi laga sakte hain
+  alert(msg); 
 };
 
 const CustomZoom = () => {
@@ -97,13 +97,13 @@ const MapView = () => {
   const mapRef = useRef<L.Map | null>(null);
   const featureGroupRef = useRef<L.FeatureGroup | null>(null); // ✅ FeatureGroup ref
 
-  // ✅ GeoJSON Export Function with type assertion
+ 
   const exportGeoJSON = () => {
     if (!featureGroupRef.current) return;
 
     const geoJson = featureGroupRef.current.toGeoJSON() as FeatureCollection<Geometry>;
 
-    // Add shapeType to each feature
+   
     geoJson.features = geoJson.features.map(f => ({
       ...f,
       properties: {
@@ -112,7 +112,7 @@ const MapView = () => {
       },
     }));
 
-    // Download file
+    
     const blob = new Blob([JSON.stringify(geoJson, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -254,7 +254,7 @@ const MapView = () => {
           <button className="rt-btn" onClick={handleSearch}>
             🔍
           </button>
-          {/* ✅ Updated Export Button */}
+       
           <button className="rt-btn export" onClick={exportGeoJSON}>
             ⬇ Export
           </button>
